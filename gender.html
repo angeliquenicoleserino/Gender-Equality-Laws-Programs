@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Equality Laws & Programs</title>
+    <link rel="stylesheet" href="nikol.css">
+    <script>
+        // JavaScript to show/hide content based on navigation clicks
+        function showSection(sectionId) {
+            // Hide all sections first
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the clicked section
+            var sectionToShow = document.getElementById(sectionId);
+            if (sectionToShow) {
+                sectionToShow.style.display = 'block';
+            }
+        }
+
+        // Function to go back to the homepage section
+        function goHome() {
+            // Hide all sections and show the home page content
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById('home').style.display = 'block'; // Show home page content
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Gender Equality Laws & Programs</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="goHome()">Home </a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('laws')">Laws</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('programs')">National Programs</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('civil-society')">Civil Societies</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('case-scenario')">Case Scenario</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('call-to-action')">Call to Action</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page Section -->
+    <section id="home" style="display: block;">
+        <h2>Welcome to Gender Equality Laws & Programs</h2>
+        <p>Welcome to our platform dedicated to promoting gender equality through awareness of laws, national programs, civil societies, and support for victims of violence.</p>
+        <p>This website is designed to educate the public about important gender equality laws and initiatives aimed at protecting women and children.</p>
+        <p>Click the navigation menu to learn more about the different sections of our work.</p>
+    </section>
+
+    <!-- Laws Section -->
+    <section id="laws" style="display: none;">
+        <h2>Key Laws Promoting Gender Equality</h2>
+        <div class="law">
+            <h3>RA 9262: Violence Against Women and Children (VAWC)</h3>
+            <p><strong>Objective:</strong> To protect women and children from violence in relationships, providing penalties for abusive behavior.</p>
+            <p><strong>Key Provisions:</strong> Includes psychological violence, physical abuse, and economic control, among others.</p>
+            <p><strong>Penalties:</strong> Imprisonment and fines based on the severity of the crime.</p>
+            <p><strong>Why it’s Important:</strong> It ensures that women and children can live free from violence in all forms.</p>
+        </div>
+        <!-- Add more laws as needed -->
+    </section>
+
+    <!-- National Programs Section -->
+    <section id="programs" style="display: none;">
+        <h2>National Programs for Gender Equality</h2>
+        <ul>
+            <li>Philippine Plan for Gender Responsive Development (1995-2025)</li>
+            <li>Gender and Development Budget (GAD)</li>
+            <li>Framework Plan for Women</li>
+            <li>Other Government Programs</li>
+        </ul>
+    </section>
+
+    <!-- Civil Society Section -->
+    <section id="civil-society" style="display: none;">
+        <h2>Women’s Involvement in Civil Society</h2>
+        <p>These organizations play a key role in advocating for women's rights:</p>
+        <ul>
+            <li>PILIPINA</li>
+            <li>GABRIELA</li>
+            <li>UKP Network of Women in Politics</li>
+            <li>KILOS KABARO</li>
+            <li>SIBOL Legislative</li>
+        </ul>
+    </section>
+
+    <!-- Case Scenario Section -->
+    <section id="case-scenario" style="display: none;">
+        <h2>Case Scenario</h2>
+        <p><strong>Incident:</strong> A woman is being stalked and harassed by her former partner. Despite multiple warnings, he continues to make threats and intrudes on her personal space. The woman reports the case under the Anti-Sexual Harassment Law (RA 7877).</p>
+        <p><strong>How the Law Protects the Victim:</strong> The law provides mechanisms to file complaints, investigation, and if proven, the abuser is penalized with fines and/or imprisonment. This protects the woman from further harm and provides legal protection for her safety.</p>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="call-to-action" style="display: none;">
+        <h2>Call to Action</h2>
+        <p><strong>Steps to Raise Awareness:</strong></p>
+        <ul>
+            <li>Organize community discussions on gender equality laws.</li>
+            <li>Use social media platforms to educate the public.</li>
+            <li>Collaborate with local government units to spread information about available legal resources.</li>
+        </ul>
+
+        <p><strong>Helplines and Resources:</strong></p>
+        <ul>
+            <li>National Commission on the Role of Filipino Women (NCRFW) - 1-800-10-123-456</li>
+            <li>Women's Legal Aid Center - 1-800-20-987-654</li>
+            <li>Philippine National Police - 911 or 112</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gender Equality Law Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
